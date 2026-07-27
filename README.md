@@ -1,4 +1,4 @@
-##Author - Aarnon Mishra
+## Author - Aarnon Mishra
 ## Technical Implementation
 
 ### 1. Data Pipeline (Scraping)
