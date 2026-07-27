@@ -1,11 +1,4 @@
-# Team Name: Team 2
-
-## Team Members
-* Member 1: Ruhaan Kakar - [invincible1786](https://github.com/invincible1786)
-* Member 2: Pawan Manighadhan - [pawan188](https://github.com/pawan188)
-* Member 3: Sakshi S. Dwivedi - [dwivedi-jiii](https://github.com/dwivedi-jiii)
-* Member 4: Arsh Goyal - [arshGoyalDev](https://github.com/arshGoyalDev)
-
+##Author - Aarnon Mishra
 ## Technical Implementation
 
 ### 1. Data Pipeline (Scraping)
