@@ -1,0 +1,62 @@
+[project]
+name = "metakgp-rag"
+version = "1.0.0"
+description = "MetaKGP RAG System with ChromaDB and Modal"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "MetaKGP Team"}
+]
+keywords = ["rag", "metakgp", "chromadb", "modal", "fastapi"]
+
+dependencies = [
+    "chromadb>=0.4.22",
+    "sqlalchemy>=2.0.25",
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.3",
+    "pydantic-settings>=2.1.0",
+    "requests>=2.31.0",
+    "httpx>=0.26.0",
+    "spacy>=3.7.2",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "modal>=0.57.0",
+    "psycopg2-binary>=2.9.9",
+    "python-dotenv>=1.0.0",
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    "groq>=0.4.0",
+    "networkx>=3.2",
+    "pyvis>=0.3.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+start-rag = "metakgp_rag.scripts:start"
+stop-rag = "metakgp_rag.scripts:stop"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-graphmind-blue: #3B82F6;
+  --color-graphmind-dark: #0a0a0a;
+  --color-graphmind-card: #1a1a2e;
+}
+
+@layer base {
+  body {
+    @apply bg-graphmind-dark text-white;
+  }
+}
